@@ -7,6 +7,6 @@ Feature: Starting a game
     Given I am on the homepage
     When I follow "New Game"
     Then I should see "What's your name?"
-    When I fill in "value" with "my name"
+    When I fill in "name" with "my name"
     And I press "Submit"
     Then I should see "hello there"
