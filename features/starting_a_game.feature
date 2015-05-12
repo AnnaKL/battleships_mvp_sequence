@@ -9,4 +9,12 @@ Feature: Starting a game
     Then I should see "What's your name?"
     When I fill in "name" with "my name"
     And I press "Submit"
-    Then I should see "hello there"
+    Then I should see "Hello, you!"
+
+
+  Scenario: Player doesn't enter name
+    Given I am on the New Game page
+    When I don't fill in "name" with "my name"
+    Then I should see "Looks like you haven't entered your name!"
+
+
